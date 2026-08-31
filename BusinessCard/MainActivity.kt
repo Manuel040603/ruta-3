@@ -14,11 +14,10 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Email
+import androidx.compose.material.icons.filled.MailOutline
 import androidx.compose.material.icons.filled.Phone
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -90,7 +89,7 @@ fun BusinessCardScreen(modifier: Modifier = Modifier) {
             Spacer(modifier = Modifier.height(8.dp))
             ContactInfoRow(icon = Icons.Filled.Share, text = "github.com/manueltorres")
             Spacer(modifier = Modifier.height(8.dp))
-            ContactInfoRow(icon = Icons.Filled.Email, text = "manuel.torres@unmsm.edu.pe")
+            ContactInfoRow(icon = Icons.Filled.MailOutline, text = "manuel.torres@unmsm.edu.pe")
         }
     }
 }
