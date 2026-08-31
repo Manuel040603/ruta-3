@@ -1,4 +1,4 @@
-package com.example.taskcompleted
+package com.example.taskmanager
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -20,13 +20,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.taskcompleted.ui.theme.TaskCompletedTheme
+import com.example.taskmanager.ui.theme.TaskManagerTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            TaskCompletedTheme {
+            TaskManagerTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -64,7 +64,7 @@ fun TaskCompletedScreen(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun TaskCompletedPreview() {
-    TaskCompletedTheme {
+    TaskManagerTheme {
         TaskCompletedScreen()
     }
 }
